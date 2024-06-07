@@ -1,0 +1,167 @@
+/* Reset some basic styles for consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nanum Gothic", "Montserrat", sans-serif;
+  background-color: #e0f7fa;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(135deg, #0073e6, #00b4db);
+  color: white;
+  padding: 300px 20px;
+  text-align: center;
+}
+
+header .header-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  overflow: hidden; /* Ensures the typing effect stays within the h1 */
+  white-space: nowrap; /* Prevents text from wrapping */
+  border-right: 0.15em solid white; /* Adds a blinking cursor */
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+header .header-content img {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto; /* 이미지와 텍스트 사이의 간격을 조절합니다 */
+}
+
+header .header-content p {
+  font-size: 2em;
+  margin: 10px 0; /* 문단 사이의 간격을 조절합니다 */
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #0073e6;
+}
+
+#about ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+#guestbook-form input,
+#guestbook-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#guestbook-form button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0073e6;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#guestbook-form button:hover {
+  background-color: #005bb5;
+}
+
+#guestbook-entries {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.guestbook-entry {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.guestbook-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guestbook-header strong {
+  font-size: 1.1em;
+  color: #0073e6;
+}
+
+.guestbook-header .timestamp {
+  font-size: 0.9em;
+  color: #999;
+}
+
+.guestbook-content {
+  font-size: 1em;
+  color: #555;
+  margin-top: 5px;
+}
+
+button.delete {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+button.delete:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 페이지</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>WELCOME TO MY PROFILE</h1>
+            <img src="../woman.png" , class="woman_profile">
+
+            <p>EUNJI JANG</p>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>자기소개</h2>
+            <ul id="about-me">
+                <li> 이름 : 장은지 </li>
+                <li> 소속 : 광운대학교 정보융합학부 </li>
+                <li> 학번 : 2022510012 </li>
+                <li> 이메일 : ejlove0609@gmail.com </li>
+            </ul>
+            <section id="guestbook">
+                <h2>방명록</h2>
+                <form id="guestbook-form">
+                    <input type="text" id="author" placeholder="작성자" required>
+                    <textarea id="content" placeholder="내용" required></textarea>
+                    <button type="submit">남기기</button>
+                </form>
+                <div id="guestbook-entries">
+                    <!-- 여기에 방명록 항목들이 추가됩니다 -->
+                </div>
+            </section>
+    </main>
+    <script src="../static/scripts.js"></script>
+</body>
+
+</html>
